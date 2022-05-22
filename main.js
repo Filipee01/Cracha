@@ -11,7 +11,7 @@ const links = {
 }
 
 function changeSocialMediaLinks() {
-  document.getElementById('userName').textContent = 'Filipe'
+  for (let li of socialLinks.Children) alert(i)
 }
 
-changeSocialMediaLinks()
+// changeSocialMediaLinks()
