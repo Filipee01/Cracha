@@ -2,7 +2,7 @@ function showMeSomething() {
   alert(links.instagram)
 }
 
-const links = {
+const LinksSocialMedia = {
   github: 'Filipee01',
   youtube: 'GameOverYoutuber',
   facebook: 'FilipeCFAL',
@@ -11,7 +11,10 @@ const links = {
 }
 
 function changeSocialMediaLinks() {
-  for (let li of socialLinks.Children) alert(i)
+  for (let li of socialLinks.children) {
+    const social = li.getAttribute('class')
+    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+  }
 }
 
-// changeSocialMediaLinks()
+changeSocialMediaLinks()
